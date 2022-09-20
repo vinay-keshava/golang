@@ -28,7 +28,7 @@ package main - specifies that the program is a standalone executable program.
 # golang-introduction
 Getting started with GO programming language.
 Golang is platform independent programming languages that means that the binary can run on any operating system 
-# https://boot.dev/learn/learn-golang
+# www.golangbootcamp.com/book/
 
 # Execution of Golang 
 go run filename.go
