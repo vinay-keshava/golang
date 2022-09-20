@@ -7,15 +7,20 @@ either type or the =expression can omitted both cannot be ommitted;
 
 ## Import (ways of importing a package)
 import (
+
 	"fmt"
+
 	"math/rand"
+
 	)
 
 non standard lib packages are namespaced using a web url.
 some like 
 
 `import (
+
 	github.com/vinay-keshava/go-code-package
+
 )
 `
 the above go code tells the compiler to import the package from the specified repository
@@ -62,50 +67,76 @@ helloFloat:=23.43;
 : is the declaration where = is the assignment
 
 	var dd,ee=hello();
+
 	fmt.Println(dd,ee);
 
 func hello()(int,int){
+
 	a,b:=10,20;
+
 	a=a+b;
+
 	return a, b;
+
 }
 
 # Mutability of Structures in Golang
 
 Without Reference
+`
 type Student struct{
+
         name,add string
+
         age int
+
         allowances float64
+
         pocketMoneyLeft float64
+
 }
+
 func leftOutAfterPartying(s Student ) float64{
 
         s.pocketMoneyLeft=s.allowances-20
+
         return s.pocketMoneyLeft
+
 }
+
 func main(){
+
         s:=Student{name:"vinay", add:"beng", age:20, allowances:23.23, pocketMoneyLeft:123.21}  
+
         Println(s.pocketMoneyLeft)
+
         Println(leftOutAfterPartying(s))
+
         Println(s.pocketMoneyLeft)
-
-
-
 
 }       
+`
 
+
+
+`
 With reference any changes in the object made must be reflected back to object this is done using pointers
 
 func newRelease(a *Artist) int {
+
 	a.Songs++
+
 	return a.Songs
+
 }
 
 func main() {
 	me := &Artist{Name: "Matt", Genre: "Electro", Songs: 42}
+
 	fmt.Printf("%s released their %dth song\n", me.Name, newRelease(me))
+
 	fmt.Printf("%s has a total of %d songs", me.Name, me.Songs)
+
 }
 
-
+`
