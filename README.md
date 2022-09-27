@@ -20,12 +20,12 @@ either type or the =expression can omitted both cannot be ommitted;
 non standard lib packages are namespaced using a web url.
 some like 
 
-`import (
-
-	github.com/vinay-keshava/go-code-package
-
+```
+import (
+  github.com/vinay-keshava/golang/main.go
+  //non standard packages are imported this way 
 )
-`
+```
 the above go code tells the compiler to import the package from the specified repository
 
 
@@ -54,7 +54,7 @@ byte(alias for uint8) rune(alias for int32) float32 float64 complex64 complex128
 # Declaration 
  var name type= expression
 
-either the type or the expression is igmored 
+either the type or the expression is ignored 
 
 # Short Variable Declaration
 name:=expression  -> mainly used for local variables;
@@ -62,7 +62,7 @@ Here the type of the variable is automatically detected
 
 Examples are:
 hello:=20;     Integer type
-
+```
 helloString:="String variable";
 
 helloFloat:=23.43;
@@ -82,11 +82,14 @@ func hello()(int,int){
 	return a, b;
 
 }
+```
 
 # Mutability of Structures in Golang
 
 Without Reference
-`
+
+
+```
 type Student struct{
 
         name,add string
@@ -118,13 +121,10 @@ func main(){
         Println(s.pocketMoneyLeft)
 
 }       
-`
+```
 
-
-
-`
 With reference any changes in the object made must be reflected back to object this is done using pointers
-
+```
 func newRelease(a *Artist) int {
 
 	a.Songs++
@@ -142,4 +142,4 @@ func main() {
 
 }
 
-`
+```
