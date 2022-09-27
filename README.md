@@ -10,11 +10,11 @@ either type or the =expression can omitted both cannot be ommitted;
 
  import (
 
-	"fmt"
+  	"fmt"
 
-	"math/rand"
+  	"math/rand"
 
-	)
+)
 
 
 non standard lib packages are namespaced using a web url.
