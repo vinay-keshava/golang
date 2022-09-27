@@ -7,7 +7,7 @@ either type or the =expression can omitted both cannot be ommitted;
 
 ## Import (ways of importing a package)
 
-
+```
    import (
 
      	"fmt"
@@ -15,7 +15,7 @@ either type or the =expression can omitted both cannot be ommitted;
     	"math/rand"
 
   )
-
+```
 
 non standard lib packages are namespaced using a web url.
 some like 
