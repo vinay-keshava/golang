@@ -7,8 +7,8 @@ either type or the =expression can omitted both cannot be ommitted;
 
 ## Import (ways of importing a package)
 
-`
-import (
+
+` import (
 
 	"fmt"
 
